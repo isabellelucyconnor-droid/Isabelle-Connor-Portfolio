@@ -73,7 +73,7 @@ body::before{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 40px;
+    padding:8cqh 40px;
     border-radius:18px;
     background:rgba(17,23,46,.55);
     backdrop-filter:blur(20px);
@@ -91,6 +91,12 @@ body::before{
 .logo span{
 
     color:var(--primary);
+}
+.nav-links{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:30px;
 }
 .nav-links a{
     color:var(--text-light);
