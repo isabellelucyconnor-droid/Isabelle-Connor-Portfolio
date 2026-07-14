@@ -39,10 +39,11 @@ body::before{
     content:"";
     position:fixed;
     inset:0;
+
     background-image:
-    radial-gradient(white 1px, transparent 1px),
-    radial-gradient(white .8px, transparent .8px),
-    radial-gradient(#8b5cf6 1px, transparent 1px);
+    radial-gradient(white 1.5px, transparent 1.5px),
+    radial-gradient(white 1.4px, transparent 1.4px),
+    radial-gradient(#8b5cf6 1.8px, transparent 1.8px);
 
     background-size:
     180px 180px,
@@ -51,7 +52,7 @@ body::before{
 
     opacity:.25;
     pointer-events:none;
-    animation:stars 9s linear infinite;
+    animation:stars 30s linear infinite;
 }
 @keyframes stars{
 
