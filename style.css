@@ -350,6 +350,16 @@ section:not(#hero) {
     box-shadow: var(--shadow);
 }
 
+.skill-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
+    border-color: rgba(56, 189, 248, 0.35);
+}
+
 .skill-card i {
     font-size: 1.5rem;
     color: var(--secondary);
