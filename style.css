@@ -6,8 +6,6 @@ html {
 
 :root {
     --bg: #050816;
-    --bg-secondary: #0d1229;
-    --card: #11172e;
     --primary: #8b5cf6;
     --secondary: #38bdf8;
     --accent: #c084fc;
@@ -425,9 +423,20 @@ section:not(#hero) {
 }
 
 .timeline-grid {
+    position: relative;
     max-width: 860px;
     margin: 0 auto;
     padding: 24px 0;
+}
+
+.timeline-grid::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(56, 189, 248, 0.8), rgba(139, 92, 246, 0.25));
 }
 
 .timeline-card {
@@ -441,7 +450,20 @@ section:not(#hero) {
     flex-direction: column;
     gap: 18px;
     max-width: 720px;
-    margin: 32px auto;
+    margin: 32px auto 32px 60px;
+    padding-left: 32px;
+}
+
+.timeline-card::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 34px;
+    width: 22px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(56, 189, 248, 0.95), rgba(139, 92, 246, 0.4));
+    border-radius: 999px;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.18);
 }
 
 
@@ -623,11 +645,6 @@ footer {
 
     .timeline-card {
         margin: 24px 0;
-    }
-
-    .timeline-card::before {
-        left: 28px;
-        top: 36px;
     }
 
     .timeline-card-header {
