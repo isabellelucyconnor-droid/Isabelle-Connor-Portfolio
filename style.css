@@ -392,6 +392,34 @@ section:not(#hero) {
     gap: 7px;
 }
 
+.cert-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.cert-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 54px;
+    height: 54px;
+    padding: 10px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.cert-brand img {
+    max-height: 28px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
 .cert-badge {
     display: inline-block;
     padding: 6px 10px;
@@ -400,7 +428,6 @@ section:not(#hero) {
     color: var(--accent);
     font-size: 0.8rem;
     letter-spacing: 0.15em;
-    margin-bottom: 12px;
 }
 
 .contact-card {
