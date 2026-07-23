@@ -1,6 +1,7 @@
 /* Global */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
 }
 
 :root {
@@ -298,11 +299,11 @@ section:not(#hero) {
 .image-frame {
     position: relative;
     display: inline-block;
-    padding: 10px;
-    border-radius: 24px;
+    padding: 8px;
+    border-radius: 22px;
     background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.04));
     border: 1px solid rgba(255,255,255,0.35);
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 0 35px rgba(255,255,255,0.12), 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 0 24px rgba(255,255,255,0.1), 0 12px 28px rgba(0,0,0,0.25);
 }
 
 .image-frame::before {
@@ -320,7 +321,7 @@ section:not(#hero) {
 .about-image img {
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 260px;
     border-radius: 18px;
     object-fit: cover;
     border: 1px solid rgba(255,255,255,0.25);
@@ -421,6 +422,93 @@ section:not(#hero) {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.timeline-grid {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.timeline-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 720px;
+    margin: 32px auto;
+}
+
+
+.timeline-card--featured {
+    background: linear-gradient(180deg, rgba(17, 23, 46, 0.95), rgba(17, 23, 46, 0.75));
+}
+
+.timeline-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.timeline-date {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.timeline-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 14px;
+    display: grid;
+    gap: 10px;
+}
+
+.timeline-body-section {
+    display: grid;
+    gap: 10px;
+}
+
+.timeline-body h4 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.education-logo {
+    min-width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.education-logo span {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.education-logo--ntu {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.85), rgba(56, 189, 248, 0.65));
+}
+
+.education-logo--bc {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.85), rgba(16, 185, 129, 0.65));
+}
+
+.education-logo--fs {
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.85), rgba(245, 158, 11, 0.65));
 }
 
 .cert-brand img {
@@ -526,6 +614,25 @@ footer {
     .project-grid,
     .cert-grid {
         grid-template-columns: 1fr;
+    }
+
+    .timeline-grid {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .timeline-card {
+        margin: 24px 0;
+    }
+
+    .timeline-card::before {
+        left: 28px;
+        top: 36px;
+    }
+
+    .timeline-card-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
