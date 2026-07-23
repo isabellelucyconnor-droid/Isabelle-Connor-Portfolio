@@ -1,38 +1,41 @@
-// Mobile Menu
-
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
 
-// Highlight current section
+    navItems.forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+}
 
 const sections = document.querySelectorAll("section");
 const links = document.querySelectorAll(".nav-links a");
 
-window.addEventListener("scroll", () => {
-
+const updateActiveLink = () => {
     let current = "";
 
-    sections.forEach(section => {
-
+    sections.forEach((section) => {
         const sectionTop = section.offsetTop - 120;
-        const sectionHeight = section.clientHeight;
 
-        if (pageYOffset >= sectionTop) {
+        if (window.pageYOffset >= sectionTop) {
             current = section.getAttribute("id");
         }
-
     });
 
-    links.forEach(link => {
+    links.forEach((link) => {
         link.classList.remove("active");
 
-        if(link.getAttribute("href") === "#" + current){
+        if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
     });
+};
 
-});
+window.addEventListener("scroll", updateActiveLink);
+window.addEventListener("load", updateActiveLink);

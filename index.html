@@ -8,20 +8,16 @@
 
     <title>Isabelle Connor | Portfolio</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-
 <header>
     <nav class="navbar">
         <a class="logo" href="#hero">Isabelle <span>Connor</span></a>
@@ -35,137 +31,190 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div class="menu-btn">
+        <button class="menu-btn" type="button" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars"></i>
-        </div>
+        </button>
     </nav>
 </header>
 
 <main>
-
-    <!-- Hero -->
     <section id="hero">
-    <section id="hero">
-
-    <div class="hero-content">
-
-        <p class="hero-tag">
-            ✦ Computer Science Student at Nottingham Trent University
-        </p>
-        <h1>
-            Hi, I'm <span>Isabelle Connor</span>
-        </h1>
-        <h2>
-            Building intuitive software,
-            beautiful interfaces and exploring AI.
-        </h2>
-        <p class="hero-description">
-            I'm currently seeking a Software Engineering placement where I can
-            contribute to meaningful projects, learn from experienced developers,
-            and continue growing as an engineer.
-        </p>
-        <div class="hero-buttons">
-            <a href="#projects" class="primary-btn">
-                View Projects
-            </a>
-            <a href="CV.pdf" class="secondary-btn">
-                Download CV
-            </a>
+        <div class="hero-content">
+            <p class="hero-tag">✦ Computer Science Student at Nottingham Trent University</p>
+            <h1>Hi, I'm <span>Isabelle Connor</span></h1>
+            <h2>Building thoughtful software, polished interfaces, and ideas shaped by AI.</h2>
+            <p class="hero-description">
+                I’m currently exploring software engineering, web development, and human-centred digital experiences.
+                I’m looking for a placement where I can contribute to meaningful projects, learn from experienced developers,
+                and grow as an engineer.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="primary-btn">View Projects</a>
+                <a href="#contact" class="secondary-btn">Get In Touch</a>
+            </div>
         </div>
 
-    </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
 
-</section>
-
-    </div>
-
-    <div class="scroll-indicator">
-        <span>Scroll to explore</span>
-        <i class="fa-solid fa-chevron-down"></i>
-    </div>
-
-</section>
-
-    <!-- About -->
     <section id="about">
-        <h1>👋 About Me</h1>
+        <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Curious, creative, and eager to build things that matter.</h2>
+        </div>
 
         <div class="about-wrapper">
-
             <div class="about-text">
-                <p class="intro-text">
-                    Hello, I’m <strong>Isabelle</strong>.  
-                    I’m a Computer Science student passionate about building digital experiences that genuinely make people’s lives easier.
-                </p>
-                <p>
-                    I’m especially driven by the possibilities of <strong>AI</strong> — from intelligent automation to accessible, human‑centred systems.
-                </p>
-                <p>
-                    I’m currently seeking a <strong>software engineering placement</strong> where I can contribute to real projects, grow my skills, and collaborate with teams who value curiosity and clean engineering.
-                </p>
-                <p>
-                    I’m also committed to increasing <strong>representation in tech</strong>, especially for women.
-                </p>
+                <p>Hello, I’m Isabelle. I’m a Computer Science student who enjoys turning ideas into intuitive digital experiences.</p>
+                <p>I’m especially interested in AI, accessible design, and creating products that make everyday life easier for real people.</p>
+                <p>I’m also passionate about increasing representation in tech, especially for women and underrepresented groups.</p>
+
+                <div class="about-highlights">
+                    <span>Software Engineering</span>
+                    <span>Web Development</span>
+                    <span>AI & Innovation</span>
+                </div>
             </div>
 
             <div class="about-image">
-                <img src="images/PictureOfMe3.png" alt="Picture of Isabelle">
+                <div class="image-frame">
+                    <img src="images/PictureOfMe3.png" alt="Portrait of Isabelle Connor">
+                </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills">
-        <h1>My Skills</h1>
-        <ul>
-            <li>HTML5</li><!--Add badges with icons for each skill-->
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>Python</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-        <h1>Projects</h1>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications">
-        <h1>Certifications</h1>
-        <div class="certificate freecodecamp-responsive-web-design">
-            <h1>FreeCodeCamp Responsive Web Design</h1>
-            <h3>Skills gained: </h3>
-            <p>This demonstrates my ability to create responsive websites using HTML and CSS. In this course I learned how to build layouts that adapt to different screen sizes and different styling techniques.</p>
-            <p>To earn this certificate, I completed a series of projects that showcased my understanding</p>
-            <ul>
-                <li>Survery Form</li>
-                <li>Product Landing Page</li>
-                <li>CSS Flexbox and Grid</li>
-            </ul>
-            <!--Add a show certificate button-->
-            <img src="images/logo" alt="freeCodeCamp Logo">
-            <img src="images/FreeCodeCampResponsiveWebDesignCertificate.png" alt="FreeCodeCamp Responsive Web Design Certificate">
+        <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and technologies I’m building with.</h2>
         </div>
 
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Accessible, semantic structure for modern web pages.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Responsive layouts, visual design, and polished UI.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Interactive experiences and dynamic front-end logic.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+                <p>Component-based interfaces and user-focused development.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>C++</h3>
+                <p>Problem solving and performance-focused programming.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Python</h3>
+                <p>Automation, scripting, and exploratory development.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
+    <section id="projects">
+        <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work and learning projects.</h2>
+        </div>
+
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="project-top">
+                    <p class="project-type">Personal Website</p>
+                    <h3>Portfolio Website</h3>
+                </div>
+                <p>A responsive portfolio built with HTML, CSS and JavaScript to showcase my background, interests and projects.</p>
+                <ul>
+                    <li>Responsive layout</li>
+                    <li>Animated interactions</li>
+                    <li>Accessible navigation</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <p class="project-type">Project 2</p>
+                    <h3>Title</h3>
+                </div>
+                <p>Description of the second project.</p>
+                <ul>
+                    <li>Project features and accomplishments</li>
+                    <li>point 2</li>
+                    <li>point 3</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <p class="project-type">Project 3</p>
+                    <h3>Title</h3>
+                </div>
+                <p>Description of the third project.</p>
+                <ul>
+                    <li>Project features and accomplishments</li>
+                    <li>point 2</li>
+                    <li>point 3</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="section-heading">
+            <p class="eyebrow">Certificates</p>
+            <h2>Qualifications and learning highlights.</h2>
+        </div>
+
+        <div class="cert-grid">
+            <article class="cert-card">
+                <div class="cert-badge">FCC</div>
+                <h3>Responsive Web Design</h3>
+                <p>Completed a structured series of projects covering forms, landing pages, layout systems, and responsive styling.</p>
+                <ul>
+                    <li>Survey Form</li>
+                    <li>Product Landing Page</li>
+                    <li>CSS Flexbox and Grid</li>
+                </ul>
+            </article>
+
+            <article class="cert-card">
+                <h3>More to come</h3>
+                <p>I’m continuing to build my experience through university projects, personal development, and hands-on practice.</p>
+            </article>
+        </div>
+    </section>
+
     <section id="contact">
-        <h1>Contact Me</h1>
-        <p>Feel free to reach out if you have any questions or opportunities!</p>
-        <ul>
-            <li><a href="mailto:isabelle.connor@example.com">Email</a></li>
-            <li><a href="https://linkedin.com/in/isabelleconnor" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://github.com/isabelleconnor" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
-    </section>
+        <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect.</h2>
+        </div>
 
+        <div class="contact-card">
+            <p>If you’d like to connect about opportunities, collaboration, or placements, I’d love to hear from you.</p>
+            <div class="contact-links">
+                <a href="mailto:isabelle.connor@example.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/isabelleconnor" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/isabelleconnor" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
