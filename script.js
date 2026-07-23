@@ -41,16 +41,20 @@ window.addEventListener("scroll", updateActiveLink);
 window.addEventListener("load", updateActiveLink);
 
 const heroName = document.getElementById("hero-name");
-const fullText = "Hi, I'm Isabelle Connor";
-let textIndex = 0;
+const fullName = "Isabelle Connor";
+let nameIndex = 0;
 
 if (heroName) {
-    const typeWriter = () => {
-        heroName.textContent = fullText.slice(0, textIndex);
-        textIndex += 1;
+    heroName.classList.add("is-typing");
 
-        if (textIndex <= fullText.length) {
-            setTimeout(typeWriter, 90);
+    const typeWriter = () => {
+        heroName.textContent = fullName.slice(0, nameIndex);
+        nameIndex += 1;
+
+        if (nameIndex <= fullName.length) {
+            setTimeout(typeWriter, 100);
+        } else {
+            heroName.classList.remove("is-typing");
         }
     };
 

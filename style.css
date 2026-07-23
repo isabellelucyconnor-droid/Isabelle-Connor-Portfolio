@@ -171,9 +171,16 @@ button {
 
 #hero-name {
     display: inline-block;
-    min-width: 12ch;
+    min-width: 14ch;
     white-space: nowrap;
     overflow: hidden;
+    vertical-align: bottom;
+    position: relative;
+}
+
+
+.hero-content h1 {
+    display: block;
 }
 
 #hero h2 {
@@ -686,7 +693,7 @@ footer {
 }
 
 @keyframes blink-caret {
-    50% { border-color: transparent; }
+    50% { opacity: 0; }
 }
 
 @media (max-width: 900px) {
