@@ -39,3 +39,20 @@ const updateActiveLink = () => {
 
 window.addEventListener("scroll", updateActiveLink);
 window.addEventListener("load", updateActiveLink);
+
+const heroName = document.getElementById("hero-name");
+const fullText = "Hi, I'm Isabelle Connor";
+let textIndex = 0;
+
+if (heroName) {
+    const typeWriter = () => {
+        heroName.textContent = fullText.slice(0, textIndex);
+        textIndex += 1;
+
+        if (textIndex <= fullText.length) {
+            setTimeout(typeWriter, 90);
+        }
+    };
+
+    setTimeout(typeWriter, 300);
+}

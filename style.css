@@ -169,6 +169,13 @@ button {
     color: var(--primary);
 }
 
+#hero-name {
+    display: inline-block;
+    min-width: 12ch;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 #hero h2 {
     margin-top: 18px;
     font-size: clamp(1.1rem, 2vw, 1.5rem);
@@ -676,6 +683,10 @@ footer {
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
 }
 
 @media (max-width: 900px) {
